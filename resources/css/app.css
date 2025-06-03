@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 25 118 210; /* Bleu principal */
+  --primary-foreground: 255 255 255;
+  --secondary: 41 128 185; /* Bleu secondaire */
+  --secondary-foreground: 255 255 255;
+  --background: 255 255 255;
+  --foreground: 15 23 42;
+  --muted: 241 245 249;
+  --muted-foreground: 100 116 139;
+  --accent: 248 250 252;
+  --accent-foreground: 15 23 42;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --border: 226 232 240;
+  --input: 226 232 240;
+  --ring: 25 118 210;
+  --radius: 0.5rem;
+}
+
+/* Couleur d'arrière-plan principale */
+body {
+  background-color: #f8f9fa; /* Gris très pâle */
+}
+
+/* Style pour l'en-tête principal */
+.header-bg {
+  background-color: #1a4971; /* Bleu foncé exact de BiblioUniv */
+}
+
+/* Style pour la barre de navigation */
+.nav-bar {
+  background-color: #2980b9; /* Bleu moyen exact de BiblioUniv */
+}
+
+/* Style pour les boutons */
+.btn-primary {
+  background-color: #3498db; /* Bleu clair exact de BiblioUniv */
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9; /* Bleu moyen */
+}
+
+/* Style pour les boutons de réservation */
+.btn-reserve {
+  background-color: #3498db; /* Bleu clair */
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* Style pour les boutons de recherche */
+.btn-search {
+  background-color: #3498db; /* Bleu clair */
+  color: white;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Style pour les cartes */
+.card-content {
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les statuts */
+.status-available {
+  color: #27ae60; /* Vert */
+  font-weight: 500;
+}
+
+.status-unavailable {
+  color: #e74c3c; /* Rouge */
+  font-weight: 500;
+}
+
+/* Style pour les sections de contenu */
+.content-section {
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les services */
+.service-card {
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.service-icon {
+  color: #3498db; /* Bleu clair */
+  margin-bottom: 1rem;
+}
+
+/* Style pour le pied de page */
+.footer-bg {
+  background-color: #1a4971; /* Bleu foncé */
+  color: white;
+}
+
+/* Style pour les titres de section */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* Style pour les liens "Voir tout" */
+.see-all-link {
+  color: #3498db;
+  font-size: 0.875rem;
+}
+
+/* Style pour les filtres */
+.filter-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.filter-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+}
+
+.filter-select {
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+[x-cloak] {
+  display: none !important;
+}
