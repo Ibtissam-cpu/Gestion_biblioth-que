@@ -13,6 +13,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HistoriqueController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\AccueilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,14 +23,7 @@ use App\Http\Controllers\UserController;
 */
 
 // Route d'accueil
-Route::get('/', function () {
-    if (auth()->check()) {
-        return auth()->user()->role === 'admin' 
-            ? redirect()->route('admin.dashboard') 
-            : redirect()->route('membre.dashboard');
-    }
-    return redirect()->route('login');
-})->name('home');
+Route::get('/', [AccueilController::class, 'index'])->name('accueil');
 
 // Routes d'authentification
 require __DIR__.'/auth.php';
